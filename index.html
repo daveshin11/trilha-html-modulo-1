@@ -1,62 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página - Módulo I - Primeiros Passos com HTML</title>
+  <style>
+    h1 {
+      text-align: center;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
-    <hr />
+  <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
+  <hr />
 
-    <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
-    <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
-    </ul>
+  <h2>Índice</h2>
+  <ul>
+    <li>
+      <a href="#historia-dos-computadores">História dos computadores</a>
+    </li>
+    <li>
+      <a href="#clients-servers">O que são <i>Clients</i>?</a>
+    </li>
+    <li>
+      <a href="#clients-servers">O que são <i>Servers</i>?</a>
+    </li>
+    <li>
+      <a href="#estrutura-basica">Como é uma estrutura básica de um HTML?</a>
+    </li>
+    <li>
+      <a href="#lists">Entendendo a diferença entre listas ordenadas e não ordenadas</a>
+    </li>
+    <li><a href="#links">Links de referências</a></li>
+  </ul>
+  <!--História dos computadores-->
+  <h2 id="historia-dos-computadores">História e Evolução dos computadores</h2>
+  <p>
+    A primeira geração de computadores, tem como exemplo o
+    <a href="https://tecnoblog.net/especiais/eniac-primeiro-computador-do-mundo-completa-65-anos/#:~:text=Sua%20construção%20de%20iniciou%20em,vez%20em%20julho%20de%2047."
+      target="_blank"><strong><i><abbr title="Eletronic Numerical Integrator and Computer">ENIAC
+          </abbr></i><sup>*</sup></strong></a>
+    (1946). Foi o primeiro computador digital e eletrônico programável do
+    mundo. E o enorme
+    <a href="https://www.tecmundo.com.br/historia/40576-colossus-heroi-de-guerra-e-um-dos-primeiros-computadores-do-mundo.htm"
+      target="_blank"><strong><i>Colossus</i></strong></a><sup>*</sup> fazem parte dos primeiros computadores.
+  </p>
+  <p>
+    A segunda geração com <strong><i>transistores</i></strong>, substituindo as válvulas de 1959 até 1965.
+    <br />
+    Na terceira geração funcionavam por
+    <strong><i>circuitos integrados</i></strong>, substituindo os transistores de 1965 até 1970.
+  </p>
+  <p>
+    A partir de 1971 temos a quarta geração que dura até hoje, foi nela que os computadores evoluiram até o que conhecemos
+    hoje.
+  </p>
+  <p>
+  <blockquote>há quem diga que estamos vivendo a quinta geração de computadores que seria marcada pelas <strong>criptomoedas,
+      metaverso e <abbr title="Inteligência artificial"><strong><i>IA</i></strong></abbr></strong>.</blockquote>
+  </p>
+  <a title="Clique para voltar ao topo" href="#inicio">
+      < Início</a>
+  <hr />
+      <!--Início de O que são Clients e Servers-->
+  <h2 id="#clients-servers">O que são <a href="https://pt.wikipedia.org/wiki/Modelo_cliente-servidor" target="_blank"><i>Clients</i> e <i>Servers</i>?</a></h2>
+  <p>
+    O modelo <strong><i>cliente-servidor</i></strong> (em inglês client/server model), em computação, é uma estrutura de aplicação distribuída
+    que distribui as tarefas e cargas de trabalho entre os fornecedores de um recurso ou serviço, designados como
+    <a href="https://www.controle.net/faq/o-que-sao-servidores" target="_blank"><strong><i>servidores/servers</i></strong></a>, e os requerentes dos serviços, designados como <a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215#:~:text=É%20o%20cliente%20quem%20sempre,qual%20esse%20site%20está%20hospedado."><strong><i>clientes/clients</i></strong></a>.
+  </p>
+  <p>
+    <strong><u>CLIENTS:</u> </strong>É o <strong><i>cliente</i></strong> quem sempre inicia a comunicação com o
+    <strong><i>servidor</i></strong>.
+    O <strong><i>cliente</i></strong> mais conhecido é o navegador.
+    Quando acessamos um site pelo navegador, uma requisição é disparada pela internet para o computador no qual esse
+    site está hospedado.,
+  </p>
+  <p>
+    <strong><u>SERVERS:</u></strong> O papel do servidor é receber uma requisição e devolver uma resposta para o
+    cliente.
+  </p>
+  <a title="Clique para voltar ao topo" href="#inicio">
+      < Início</a>
+  <hr />
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <!--Inínio de Estruturas básicas de um HTML-->
+  <h2 id="estrutura-basica">Como é uma estrutura básica de um HTML?</h2>
+  <p>A <a href="https://www.alura.com.br/apostila-html-css-javascript/03CA-a-spec-html#:~:text=Um%20documento%20HTML%20válido%20precisa,body>%20e%20a%20instrução%20<!" target="_blank">estrutura básica</a><sup>*</sup>
+    da Linguagem de Marcação de Hipertexto HTML, se consiste em 3 tags principais, sendo elas: </p>
+    <ol>
+      <li><strong><u>HTML</u> </strong>- Na estrutura do documento, antes de começar a colocar o conteúdo, inserimos uma tag <strong><i>html</i></strong>, define o documento;</li>
+      <li><strong><u>HEAD</u> </strong>- Define o cabeçalho da página, que contém informações para o navegador e que não aparecerá para o usuário;</li>
+      <li><strong><u>BODY</u> </strong>- Define o corpo de um documento <strong><i>html</i></strong>, que é exibido pelo navegador em sua janela, ou seja, todo o conteúdo visível do site.</li>
+    </ol>
+  <a title="Clique para voltar ao topo" href="#inicio">
+     Início</a>
+  <hr />
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+  <!--Início de diferença entre listas-->
+  <h2 id="lists">Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
+  <p>
+    Em HTML podemos fazer dois tipos de <a href="https://www.devmedia.com.br/trabalhando-com-listas-ordenadas-no-html/21739#:~:text=Lista%20é%20um%20importante%20recurso,como%20no%20caso%20de%20menus." target="_blank">listas</a> <mark>listas ordenada</mark> e <mark>não ordenada</mark>.
+  </p>
+  <ul>
+    <li><strong>Ordenadas</strong> - Utiliza a tag <strong><i>ol</i></strong></li>
+    <li><strong>Não ordenadas</strong> - Utiliza a tag <strong><i>ul</i></strong></li>
+  </ul>
+  <p>As <strong>listas ordenads</strong>, seguem uma ordem e são mostradas em sequência numerada para cada item da lista, por exemplo: </p>
+  <ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ol>
+  <p>As listas <strong>não ordenadas</strong> são mostradas com pontos ao lado dos itens, por exemplo: </p>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+  <a title="Clique para voltar ao topo" href="#inicio">
+    < Início</a>
+  <hr />
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
-
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
-    <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
-    </ul>
-
+    <!--Início de Links-->
+  <h2 id="links">Links de referências</h2>
+  <p>
+    <strong><u>LINKS:</u> </strong>Links utilizados em pesquisas.
+  </p>
+  <ul>
+    <li><a href="http://dio.me">Site da DIO</a></li>
+    <li><a href="https://www.w3.org">Site da W3C</a></li>
+    <li><a href="https://www.todamateria.com.br/historia-e-evolucao-dos-computadores/" target="_blank">Site da História do ENIAC</a></li>
+    <li><a href="https://www.tecmundo.com.br/historia/40576-colossus-heroi-de-guerra-e-um-dos-primeiros-computadores-do-mundo.htm" target="_blank">Site da História do Colossus</a></li>
+    <li><a href="https://pt.wikipedia.org/wiki/Modelo_cliente%E2%80%93servidor" target="_blank">Site sobre modelo cliente-servidor</a></li>
+    <li><a href="https://www.devmedia.com.br/http-cliente-e-servidor/41215#:~:text=É%20o%20cliente%20quem%20sempre,qual%20esse%20site%20está%20hospedado.">Site sobre cliente-servidor</a></li>
+    <li><a href="https://www.controle.net/faq/o-que-sao-servidores">Site sobre servidor</a></li>
+    <li><a href="https://www.devmedia.com.br/trabalhando-com-listas-ordenadas-no-html/21739#:~:text=Lista%20é%20um%20importante%20recurso,como%20no%20caso%20de%20menus.">Site sobre listas</a></li>
+    <li><a href="https://www.alura.com.br/apostila-html-css-javascript/03CA-a-spec-html#:~:text=Um%20documento%20HTML%20válido%20precisa,body>%20e%20a%20instrução%20<!">Site sobre estrutura básica HTML</a></li>
+    <li><a href="https://www.w3schools.com">Site da W3SCHOOLS</a></li>
+  </ul>
+  <a title="Clique para voltar ao topo" href="#inicio">
+    < Início</a>
+  <hr />
 </body>
+
 </html>
